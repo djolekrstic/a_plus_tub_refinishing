@@ -14,11 +14,13 @@
             <a href="#"><img src="assets/logo.svg" alt="A+TUB refinishing"></a>
 
             <ul class="menu">
-                <li><a href="" class="menu__item">HOME</a></li>
-                <li><a href="" class="menu__item">SERVICES</a></li>
-                <li><a href="" class="menu__item">GALLERY</a></li>
-                <li><a href="" class="menu__item">ABOUT</a></li>
-                <li><button class="menu__item menu__btn">GET YOUR QUOTE</button></li>
+                <li><a href="#home" class="menu__item">HOME</a></li>
+                <li><a href="#services" class="menu__item">SERVICES</a></li>
+                <li><a href="#gallery" class="menu__item">GALLERY</a></li>
+                <li class="menu__buttons">
+                    <a href="#contact"><button class="menu__item menu__btn">GET YOUR QUOTE</button></a>
+                    <button class="menu__contact"><span class="menu__contact__number">204 408-6017</span><br/><span class="menu__contact__text">Call or Text Us</span></button>
+                </li>
             </ul>
         </section>
     </nav>
@@ -26,7 +28,7 @@
     <!-- Main -->
     <main class="main">
         <!-- Hero -->
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="hero__div container">
                 <div class="hero__left">
                     <h1 class="hero__left__h1">Bring your<br/><span class="colored__span">bathroom</span><br/>back to life.</h1>
@@ -42,9 +44,9 @@
         </section>
 
         <!-- Services -->
-        <section class="services container">
+        <section id="services" class="services container">
             <div class="services__div__p">
-                <p class="services__p">Services</p>
+                <p class="services__p">SERVICES</p>
             </div>
             <div class="services__div__h2">
                 <h2 class="services__h2">Types of surfaces we refinish</h2>
@@ -96,10 +98,70 @@
         </section>
 
         <!-- Contact -->
-        <section></section>
+        <section id="contact" class="contact">
+            <div class="contact__div container">
+                <div class="contact__left">
+                    <div class="contact__left__div__p">
+                        <p class="contact__left__p">GET A QUOTE</p>
+                    </div>
+                    <h2 class="contact__left__h2">Need a quote?<br/>Get one today.</h2>
+                </div>
+    
+                <form class="contact__form">
+                    <div class="contact__form__top">
+                        <div class="contact__form__top__left">
+                            <input class="form__input form__input--focus" type="text" id="name" name="name" placeholder="Full Name">
+                            <input class="form__input form__input--focus" type="email" id="email" name="email" placeholder="Email">
+                            <input class="form__input form__input--focus" type="text" id="number" name="number" placeholder="Phone">
+                        </div>
+                        <div class="contact__form__top__right">
+                            <textarea class="form__input__message form__input--focus" name="message" placeholder="Message"></textarea>
+                            <input type="file" id="file-input" name="file-input" multiple>
+                            <label class="contact__form__fileUpload" for="file-input">Attach images</label>
+                        </div>
+                    </div>   
+
+                    <button class="contact__form__btn" type="submit">GET YOUR QUOTE</button>
+                  </form> 
+            </div>
+        </section>
 
         <!-- Gallery -->
-        <section></section>
+        <section id="gallery" class="gallery container">
+            <div class="gallery__div__p">
+                <p class="gallery__p">GALLERY</p>
+            </div>
+            <div class="gallery__div__h2">
+                <h2 class="gallery__h2">Our results</h2>
+            </div>
+
+            <div class="gallery__items">
+                <!-- Item -->
+                <div class="gallery__item">
+                    <img src="./assets/galleryImage.png" alt="image">
+                </div>
+                <!-- Item -->
+                <div class="gallery__item">
+                    <img src="./assets/galleryImage.png" alt="image">
+                </div>
+                <!-- Item -->
+                <div class="gallery__item">
+                    <img src="./assets/galleryImage.png" alt="image">
+                </div>
+                <!-- Item -->
+                <div class="gallery__item">
+                    <img src="./assets/galleryImage.png" alt="image">
+                </div>
+                <!-- Item -->
+                <div class="gallery__item">
+                    <img src="./assets/galleryImage.png" alt="image">
+                </div>
+                <!-- Item -->
+                <div class="gallery__item">
+                    <img src="./assets/galleryImage.png" alt="image">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
