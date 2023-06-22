@@ -30,6 +30,7 @@ html {
     --light_secondary: #F2FFD7;
     --black: #333;
     --white: #FFF;
+    --grey: #DEDEDE;
     /* Fonts */
     --primary_font: 'Lufga';
     --primary_font-medium: 'Lufga-Medium';
@@ -527,13 +528,12 @@ main {
     text-align: center;
     font-size: 1.125rem;
     font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
-    font-weight: 600;
     line-height: 3.875rem;
     letter-spacing: 0.1575rem;
 }
 
 .gallery__div__h2 {
-    margin-top: 1.5rem;
+    margin-top: 0.8125rem;
 }
 
 .gallery__h2 {
@@ -546,9 +546,118 @@ main {
 }
 
 .gallery__items {
+    margin-top: 3.125rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary);
+}
+
+.footer__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contact__header {
+    padding-top: 4.875rem;
+}
+
+.footer__left__div__p {
+    width: 11.875rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 3px;
+    background-color: var(--light_primary);
+}
+
+.footer__left__p {
+    color: var(--primary);
+    font-size: 1.125rem;
+    font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
+}
+
+.footer__left__h2 {
+    padding-top: 2.1875rem;
+    color: var(--white);
+    font-size: 3.4375rem;
+    font-family: var(--primary_font-bold), Arial, Helvetica, sans-serif;
+    line-height: 3.875rem;
+}
+
+.footer__contact__info {
+    margin-top: 11rem;
+    margin-right: 11.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.25rem;
+}
+
+.info__p {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
+    line-height: 2.5rem;
+}
+
+.info__p__green {
+    color: var(--secondary);
+    font-size: 1.875rem;
+    font-family: var(--primary_font-bold), Arial, Helvetica, sans-serif;
+    line-height: 2.5rem;
+}
+
+.footer__logo {
+    width: 100%;
+    margin-top: 5.8125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo__p {
+    color: var(--grey);
+    text-align: right;
+    font-size: 0.875rem;
+    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copyright__p {
+    padding: 1.4375rem 0;
+    color: var(--grey);
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
 }
