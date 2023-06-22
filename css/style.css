@@ -8,10 +8,18 @@ html {
     src: url("../assets/Lufga.otf");
 }
 @font-face {
+    font-family: 'Lufga-Medium';
+    src: url("../assets/Lufga-Medium.otf");
+}
+@font-face {
     font-family: 'Lufga-SemiBold';
     src: url("../assets/Lufga-SemiBold.otf");
 }
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+    font-family: 'Lufga-Bold';
+    src: url("../assets/Lufga-Bold.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* Variables */
 :root {
@@ -24,7 +32,9 @@ html {
     --white: #FFF;
     /* Fonts */
     --primary_font: 'Lufga';
-    --primary_font-700: 'Lufga-SemiBold';
+    --primary_font-medium: 'Lufga-Medium';
+    --primary_font-semiBold: 'Lufga-SemiBold';
+    --primary_font-bold: 'Lufga-Bold';
     --secondary_font: 'Raleway';
   }
 
@@ -126,7 +136,7 @@ button, input[type="submit"], input[type="reset"] {
 .menu__item {
     color: var(--white);
     font-size: 0.8125em;
-    font-family: var(--primary_font-700), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
     text-transform: uppercase; 
 }
 
@@ -135,7 +145,6 @@ button, input[type="submit"], input[type="reset"] {
     height: 3.125rem;
     flex-shrink: 0;
 
-    font-weight: 700;
     border-radius: 3px;
     background: var(--secondary);
 }
@@ -151,8 +160,7 @@ button, input[type="submit"], input[type="reset"] {
     color: var(--white);
     text-align: center;
     font-size: 1.25rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
@@ -160,8 +168,7 @@ button, input[type="submit"], input[type="reset"] {
     color: var(--white);
     text-align: center;
     font-size: 0.6875rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-family: var(--primary_font-medium), Arial, Helvetica, sans-serif;
 }
 
 .menu__btn:active, .menu__contact:active {
@@ -223,7 +230,7 @@ main {
     position: relative;
     color: var(--white);
     font-size: 5.3125rem;
-    font-family: var(--primary_font-700), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
     line-height: 6.09375rem;
     text-align: center;
 }
@@ -241,7 +248,7 @@ main {
 
     color: var(--white);
     font-size: 1rem;
-    font-family: var(--primary_font-700), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font-bold), Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 
     border-radius: 3px;
@@ -274,7 +281,7 @@ main {
     color: var(--secondary);
     text-align: center;
     font-size: 1.125rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
     font-weight: 600;
     line-height: 3.875rem;
     letter-spacing: 0.1575rem;
@@ -288,8 +295,7 @@ main {
     color:  var(--black);
     text-align: center;
     font-size: 3.4375rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-family: var(--primary_font-bold), Arial, Helvetica, sans-serif;
     line-height: 3.875rem;
 }
 
@@ -300,7 +306,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 4.7rem;
+    gap: 4rem;
 }
 
 .services__div__type {
@@ -328,7 +334,7 @@ main {
     text-align: center;
     font-size: 1.375rem;
     font-family: var(--secondary_font);
-    font-weight: 400;
+    font-weight: 700;
     line-height: 2.0625rem;
     text-transform: capitalize;
 }
@@ -370,15 +376,13 @@ main {
 .contact__left__p {
     color: var(--primary);
     font-size: 1.125rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
 }
 
 .contact__left__h2 {
     color: var(--white);
     font-size: 3.4375rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-family: var(--primary_font-bold), Arial, Helvetica, sans-serif;
     line-height: 3.875rem;
 }
 
@@ -425,7 +429,7 @@ main {
 
     color: var(--white);
     font-size: 0.9375rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font-medium), Arial, Helvetica, sans-serif;
     font-weight: 500;
     cursor: pointer;
 }
@@ -491,7 +495,7 @@ main {
 
     color: var(--white);
     font-size: 0.9375rem;
-    font-family: var(--primary_font-700), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font-bold), Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -522,7 +526,7 @@ main {
     color: var(--secondary);
     text-align: center;
     font-size: 1.125rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font-semiBold), Arial, Helvetica, sans-serif;
     font-weight: 600;
     line-height: 3.875rem;
     letter-spacing: 0.1575rem;
@@ -536,7 +540,7 @@ main {
     color:  var(--black);
     text-align: center;
     font-size: 3.4375rem;
-    font-family: var(--primary_font), Arial, Helvetica, sans-serif;
+    font-family: var(--primary_font-bold), Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 3.875rem;
 }
