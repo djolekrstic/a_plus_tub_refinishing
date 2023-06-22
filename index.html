@@ -30,15 +30,12 @@
         <!-- Hero -->
         <section id="home" class="hero">
             <div class="hero__div container">
-                <div class="hero__left">
-                    <h1 class="hero__left__h1">Bring your<br/><span class="colored__span">bathroom</span><br/>back to life.</h1>
-                    <img class="hero__left__img" src="./assets/vector.svg" alt="vector">
+                <div class="hero__top">
+                    <h1 class="hero__top__h1">Bring your <span class="colored__span">bathroom</span><br/>back to life.</h1>
                 </div>
         
-                <div class="hero__right">
-                    <p class="hero__right__p"><span class="colored__span">Free</span> estimates</p>
-                    <p class="hero__right__p">Fix Damage in <span class="colored__span">1 day</span></p>
-                    <p class="hero__right__p"><span class="colored__span">Save</span> Money</p>
+                <div class="hero__bottom">
+                    <a href="#contact"><button class="hero__btn">GET YOUR QUOTE</button></a>
                 </div>
             </div>
         </section>
@@ -116,8 +113,11 @@
                         </div>
                         <div class="contact__form__top__right">
                             <textarea class="form__input__message form__input--focus" name="message" placeholder="Message"></textarea>
-                            <input type="file" id="file-input" name="file-input" multiple>
-                            <label class="contact__form__fileUpload" for="file-input">Attach images</label>
+                            <div class="file__input">
+                                <input class="form__input__files" type="file" id="file-input" name="file-input" multiple>
+                                <label class="contact__form__fileUpload" for="file-input">Choose file</label>
+                                <p id="file">No file chosen</p>
+                            </div>
                         </div>
                     </div>   
 
@@ -166,5 +166,8 @@
 
     <!-- Footer -->
     <footer class="footer"></footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script> 
 </body>
 </html>
