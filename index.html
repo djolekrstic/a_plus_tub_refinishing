@@ -29,7 +29,7 @@
         <section class="nav__section container">
             <a href="#"><img src="assets/logo.svg" alt="A+TUB refinishing"></a>
 
-            <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <button onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                 <svg width="60" height="50" viewBox="0 0 100 100">
                   <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                   <path class="line line2" d="M 20,50 H 80" />
@@ -46,6 +46,7 @@
             <div class="hero__div container">
                 <div class="hero__top">
                     <h1 class="hero__top__h1">Bring your <span class="colored__span">bathroom</span><br/>back to life.</h1>
+                    <h1 class="hero__top__h1__mobile">Bring your<br/><span class="colored__span">bathroom</span> back<br/>to life.</h1>
                 </div>
         
                 <div class="hero__bottom">
@@ -61,6 +62,7 @@
             </div>
             <div class="services__div__h2">
                 <h2 class="services__h2">Types of surfaces we refinish</h2>
+                <h2 class="services__h2__mobile">Types of surfaces<br/>we refinish</h2>
             </div>
             <div class="services__div__types">
                 <!-- Type -->
@@ -130,7 +132,10 @@
                             <div class="file__input">
                                 <input class="form__input__files" type="file" id="file-input" name="file-input" multiple>
                                 <label class="contact__form__fileUpload" for="file-input">Choose file</label>
-                                <p id="file">No file chosen</p>
+                                <div id="file" class="tooltip">
+                                    No file chosen
+                                    <span class="tooltiptext">No file chosen</span>
+                                </div>
                             </div>
                         </div>
                     </div>   
@@ -146,7 +151,7 @@
                 <p class="gallery__p">GALLERY</p>
             </div>
             <div class="gallery__div__h2">
-                <h2 class="gallery__h2">Our results</h2>
+                <h2 class="gallery__h2">Our Results</h2>
             </div>
 
             <div class="gallery__items">
@@ -195,6 +200,7 @@
                     </div>
                     <div>
                         <p class="info__p">Call us</p>
+                        <p class="info__p__green">240 408-6017</p>
                         <p class="info__p__green">240 408-6017</p>
                     </div>
                 </div>
