@@ -757,8 +757,8 @@ main {
 }
 
 /* RESPONSIVE MOBILE -------------------------------------------------------- */
- /* XX-Large devices (large desktops, less than 1600px) */
-@media (max-width: 1599.98px) { 
+ /* XX-Large devices (large desktops, more than 1600px) */
+@media (min-width: 1599.98px) { 
     .container {
         width: 74%;
     }
